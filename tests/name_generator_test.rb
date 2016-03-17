@@ -6,6 +6,22 @@ require_relative '../lib/name_generator.rb'
 #
 ####################################################################
 
+def assert(bool, message)
+  if bool
+    puts ":)"
+  else
+    puts message
+  end
+end
+
+def refute(bool, message)
+  if !bool
+    puts ":)"
+  else
+    puts message
+  end
+end
+
 # does string contain "Xx_"?
 def test_prepend
   result = myspace_name_generator(name)
