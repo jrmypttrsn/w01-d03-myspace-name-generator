@@ -4,7 +4,7 @@
 require 'pry'
 
 def myspace_name_generator(name)
-	name.gsub(/\W/, '').split.map { |w| w.chars.map.with_index{ |s,i| i.even? ? s.upcase : s.downcase }.join }.join('').prepend("_xX") << "Xx_"
+	name.gsub(/\W/, '').split.map { |w| w.chars.map.with_index{ |s,i| i.even? ? s.upcase : s.downcase }.join }.join('').prepend("xX_") << "_Xx"
 end
 #binding.pry
 # myspace_name_generator("Jeremy Patterson")
